@@ -28,7 +28,7 @@ public class Main {
                 .stream()
                 .filter(Person -> Person.getName()!=null && Person.getLastName()!= null && Person.getAddress()!= null)
                 .sorted((item1, item2) -> item2.getAddress().getNumber() - item1.getAddress().getNumber())
-                .map(str -> str.toString())
+                .map(Person::toString)
                 .collect(Collectors.toList());
         System.out.println(modified);
     }
