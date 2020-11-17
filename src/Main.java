@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        Address<String> address1 = new Address<>("Minsk", "Sharangovicha" , 80);
-        Address<String> address2 = new Address<>("Гродно", "Lenina", 5);
-        Address<String> address3 = new Address<>("Минск", "Lobanka", 110);
+        Address address1 = new Address("Minsk", "Sharangovicha" , 80);
+        Address address2 = new Address("Гродно", "Lenina", 5);
+        Address address3 = new Address("Минск", "Lobanka", 110);
 
         Person person1 = new Person("Danila", "Sagan", address1);
         Person person2 = new Person("Anna", "Leshina", address2);

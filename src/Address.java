@@ -1,21 +1,21 @@
-public class Address<T> {
+public class Address {
 
-    private Object city;
-    private Object street;
+    private String city;
+    private String street;
     private int number;
 
-    public Address(Object city, Object street, int number){
+    public Address(String city, String street, int number){
         this.city = city;
         this.street = street;
         this.number = number;
     }
 
-    public T getCity() {
-        return (T) city;
+    public String getCity() {
+        return  city;
     }
 
-    public T getStreet(){
-        return (T) street;
+    public String getStreet(){
+        return  street;
     }
 
     public int getNumber(){
